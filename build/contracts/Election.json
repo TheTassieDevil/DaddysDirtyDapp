@@ -13,46 +13,43 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "signature": "0x6c8381f8"
     },
     {
-      "inputs": [
-        {
-          "name": "",
-          "type": "address"
-        }
-      ],
+      "inputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "constructor"
+      "type": "constructor",
+      "signature": "constructor"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516020806102e78339810180604052602081101561003057600080fd5b81019080805190602001909291905050506040805190810160405280600b81526020017f43616e64696461746520310000000000000000000000000000000000000000008152506000908051906020019061008c929190610093565b5050610138565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100d457805160ff1916838001178555610102565b82800160010185558215610102579182015b828111156101015782518255916020019190600101906100e6565b5b50905061010f9190610113565b5090565b61013591905b80821115610131576000816000905550600101610119565b5090565b90565b6101a0806101476000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636c8381f814610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016c5780601f106101415761010080835404028352916020019161016c565b820191906000526020600020905b81548152906001019060200180831161014f57829003601f168201915b50505050508156fea165627a7a72305820eb2607cbcd0ed28d1e84e1802289eb1458e3da7c9521b19ab278f53ade2859830029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636c8381f814610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016c5780601f106101415761010080835404028352916020019161016c565b820191906000526020600020905b81548152906001019060200180831161014f57829003601f168201915b50505050508156fea165627a7a72305820eb2607cbcd0ed28d1e84e1802289eb1458e3da7c9521b19ab278f53ade2859830029",
-  "sourceMap": "27:182:0:-;;;133:73;8:9:-1;5:2;;;30:1;27;20:12;5:2;133:73:0;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;133:73:0;;;;;;;;;;;;;;;;173:25;;;;;;;;;;;;;;;;;;:9;:25;;;;;;;;;;;;:::i;:::-;;133:73;27:182;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "27:182:0:-;;;;;;;;;;;;;;;;;;;;;;;;81:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;81:23:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;81:23:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Election {\r\n    // Read/write candidate\r\n    string public candidate;\r\n\r\n    // Constructor\r\n    constructor(Election) public {\r\n        candidate = \"Candidate 1\";\r\n    }\r\n}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040805190810160405280600b81526020017f43616e64696461746520310000000000000000000000000000000000000000008152506000908051906020019061005c929190610062565b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b6101a0806101166000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636c8381f814610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016c5780601f106101415761010080835404028352916020019161016c565b820191906000526020600020905b81548152906001019060200180831161014f57829003601f168201915b5050505050815600a165627a7a72305820410ee3ee7025f4adf2aafca5e87a5244127c39681025566bfa789a580cdf22a60029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636c8381f814610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016c5780601f106101415761010080835404028352916020019161016c565b820191906000526020600020905b81548152906001019060200180831161014f57829003601f168201915b5050505050815600a165627a7a72305820410ee3ee7025f4adf2aafca5e87a5244127c39681025566bfa789a580cdf22a60029",
+  "sourceMap": "29:181:0:-;;;135:72;8:9:-1;5:2;;;30:1;27;20:12;5:2;135:72:0;174:25;;;;;;;;;;;;;;;;;;:9;:25;;;;;;;;;;;;:::i;:::-;;29:181;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "29:181:0:-;;;;;;;;;;;;;;;;;;;;;;;;83:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;83:23:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;83:23:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22;\r\n\r\ncontract Election {\r\n    // Read/write candidate\r\n    string public candidate;\r\n\r\n    // Constructor\r\n    function Election () public {\r\n        candidate = \"Candidate 1\";\r\n    }\r\n}",
   "sourcePath": "C:/Users/wrigh/DaddysDirtyDapp/contracts/Election.sol",
   "ast": {
     "absolutePath": "/C/Users/wrigh/DaddysDirtyDapp/contracts/Election.sol",
     "exportedSymbols": {
       "Election": [
-        14
+        12
       ]
     },
-    "id": 15,
+    "id": 13,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
         "literals": [
           "solidity",
-          "^",
-          "0.5",
-          ".0"
+          ">=",
+          "0.4",
+          ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:25:0"
       },
       {
         "baseContracts": [],
@@ -60,9 +57,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 14,
+        "id": 12,
         "linearizedBaseContracts": [
-          14
+          12
         ],
         "name": "Election",
         "nodeType": "ContractDefinition",
@@ -72,8 +69,8 @@
             "id": 3,
             "name": "candidate",
             "nodeType": "VariableDeclaration",
-            "scope": 14,
-            "src": "81:23:0",
+            "scope": 12,
+            "src": "83:23:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -84,7 +81,7 @@
               "id": 2,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "81:6:0",
+              "src": "83:6:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -95,26 +92,26 @@
           },
           {
             "body": {
-              "id": 12,
+              "id": 10,
               "nodeType": "Block",
-              "src": "162:44:0",
+              "src": "163:44:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10,
+                    "id": 8,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8,
+                      "id": 6,
                       "name": "candidate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "173:9:0",
+                      "src": "174:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -125,14 +122,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "43616e6469646174652031",
-                      "id": 9,
+                      "id": 7,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "185:13:0",
+                      "src": "186:13:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_41f9dcbd43e9b33194759b5a51b1df9864cdc2b2138ff106f03091eb79861f0c",
@@ -140,99 +137,72 @@
                       },
                       "value": "Candidate 1"
                     },
-                    "src": "173:25:0",
+                    "src": "174:25:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 11,
+                  "id": 9,
                   "nodeType": "ExpressionStatement",
-                  "src": "173:25:0"
+                  "src": "174:25:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 13,
+            "id": 11,
             "implemented": true,
-            "kind": "constructor",
+            "isConstructor": true,
+            "isDeclaredConst": false,
             "modifiers": [],
-            "name": "",
+            "name": "Election",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "145:8:0",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Election_$14",
-                    "typeString": "contract Election"
-                  },
-                  "typeName": {
-                    "contractScope": null,
-                    "id": 4,
-                    "name": "Election",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 14,
-                    "src": "145:8:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Election_$14",
-                      "typeString": "contract Election"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "144:10:0"
-            },
-            "returnParameters": {
-              "id": 7,
+              "id": 4,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "162:0:0"
+              "src": "153:2:0"
             },
-            "scope": 14,
-            "src": "133:73:0",
+            "payable": false,
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "163:0:0"
+            },
+            "scope": 12,
+            "src": "135:72:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 15,
-        "src": "27:182:0"
+        "scope": 13,
+        "src": "29:181:0"
       }
     ],
-    "src": "0:209:0"
+    "src": "0:210:0"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/wrigh/DaddysDirtyDapp/contracts/Election.sol",
     "exportedSymbols": {
       "Election": [
-        14
+        12
       ]
     },
-    "id": 15,
+    "id": 13,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
         "literals": [
           "solidity",
-          "^",
-          "0.5",
-          ".0"
+          ">=",
+          "0.4",
+          ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:25:0"
       },
       {
         "baseContracts": [],
@@ -240,9 +210,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 14,
+        "id": 12,
         "linearizedBaseContracts": [
-          14
+          12
         ],
         "name": "Election",
         "nodeType": "ContractDefinition",
@@ -252,8 +222,8 @@
             "id": 3,
             "name": "candidate",
             "nodeType": "VariableDeclaration",
-            "scope": 14,
-            "src": "81:23:0",
+            "scope": 12,
+            "src": "83:23:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -264,7 +234,7 @@
               "id": 2,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "81:6:0",
+              "src": "83:6:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -275,26 +245,26 @@
           },
           {
             "body": {
-              "id": 12,
+              "id": 10,
               "nodeType": "Block",
-              "src": "162:44:0",
+              "src": "163:44:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10,
+                    "id": 8,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8,
+                      "id": 6,
                       "name": "candidate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 3,
-                      "src": "173:9:0",
+                      "src": "174:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -305,14 +275,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "43616e6469646174652031",
-                      "id": 9,
+                      "id": 7,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "string",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "185:13:0",
+                      "src": "186:13:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_41f9dcbd43e9b33194759b5a51b1df9864cdc2b2138ff106f03091eb79861f0c",
@@ -320,86 +290,66 @@
                       },
                       "value": "Candidate 1"
                     },
-                    "src": "173:25:0",
+                    "src": "174:25:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 11,
+                  "id": 9,
                   "nodeType": "ExpressionStatement",
-                  "src": "173:25:0"
+                  "src": "174:25:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 13,
+            "id": 11,
             "implemented": true,
-            "kind": "constructor",
+            "isConstructor": true,
+            "isDeclaredConst": false,
             "modifiers": [],
-            "name": "",
+            "name": "Election",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 13,
-                  "src": "145:8:0",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Election_$14",
-                    "typeString": "contract Election"
-                  },
-                  "typeName": {
-                    "contractScope": null,
-                    "id": 4,
-                    "name": "Election",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 14,
-                    "src": "145:8:0",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Election_$14",
-                      "typeString": "contract Election"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "144:10:0"
-            },
-            "returnParameters": {
-              "id": 7,
+              "id": 4,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "162:0:0"
+              "src": "153:2:0"
             },
-            "scope": 14,
-            "src": "133:73:0",
+            "payable": false,
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "163:0:0"
+            },
+            "scope": 12,
+            "src": "135:72:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 15,
-        "src": "27:182:0"
+        "scope": 13,
+        "src": "29:181:0"
       }
     ],
-    "src": "0:209:0"
+    "src": "0:210:0"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.4.22+commit.4cb486ee.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xA3Bb972e096df4ddc4f483a436f9E9F126811717",
+      "transactionHash": "0x932eaf7e3418b2bfac9e3f906b18aa150fd1061374a39962b38755fa04c3a992"
+    }
+  },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2021-07-24T02:24:59.172Z",
+  "updatedAt": "2021-07-24T20:57:48.787Z",
   "devdoc": {
     "methods": {}
   },

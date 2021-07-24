@@ -1,4 +1,4 @@
-pragma solidity 0.4.2;
+pragma solidity >=0.4.22;
 
 contract Election {
     // Read/write candidate
